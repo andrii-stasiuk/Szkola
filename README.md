@@ -1,0 +1,2 @@
+# Szkola
+Szkoła policealna
