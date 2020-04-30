@@ -1,0 +1,53 @@
+body {
+	font-family: Georgia;
+	margin: 0px;
+}
+
+.jeden,
+.dwa,
+.trzy,
+.jeden_dol,
+.dwa_dol,
+.trzy_dol {
+	background-color: Sienna;
+	color: white;
+	height: 150px;
+}
+
+.jeden,
+.jeden_dol {
+	width: 40%;
+	float: left;
+}
+
+.dwa,
+.dwa_dol {
+	width: 50%;
+	font-size: 150%;
+	float: left;
+}
+
+.trzy,
+.trzy_dol {
+	width: 10%;
+	text-align: center;
+	float: right;
+}
+
+.glowny {
+	background-color: Tan;
+	padding: 100px;
+	clear: both;
+}
+
+a {
+	border: 1px dashed Sienna;
+	background-color: Tan;
+	color: Sienna;
+	padding: 40px;
+	line-height: 150px;
+}
+
+li {
+	list-style-type: circle;
+}

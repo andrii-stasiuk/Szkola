@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ciągi liczbowe</title>
+    <link rel="stylesheet" href="styl2.css" type="text/css">
+    <script type="text/javascript" src="gen.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="jeden">
+            <h2>Poznaj Ciągi Liczbowe</h2>
+        </div>
+        <div class="dwa">
+            <a href="liczby.html"><h5>Ciągi arytmetyczne</h5></a>
+        </div>
+        <div class="trzy">
+            <a href="fib.html"><h5>Ciąg Fibonacciego</h5></a>
+        </div>
+        <div class="cztery">
+            <img src="obraz1.png" alt="Fibonacci" />
+        </div>
+
+        <div class="lewy">
+            <ol>
+                <li>ciągi arytmetyczne</li>
+                <li>ciągi geometryczne</li>
+                <li>ciąg Fibonacciego</li>
+            </ol>
+        </div>
+        <div class="prawy">
+            <h2>Generowanie ciągu arytmetycznego</h2>
+            <form name="ciag">
+                <label for="pierwszy">Pierwszy wyraz A1: </label>
+                <input type="number" id="pierwszy" name="pierwszy">
+                <br />
+                <label for="roznica">Różnica ciągu R: </label>
+                <input type="number" id="roznica" name="roznica">
+                <br />
+                <label for="liczba">Liczba wyrazów w ciągu N: </label>
+                <input type="number" id="liczba" name="liczba">
+                <br />
+                <input type="button" onclick="gen()" value="Generuj Ciąg">
+            </form>
+            <p class="res" id="res">&nbsp;</p>
+        </div>
+
+        <div class="stopka">
+            <p>Autor: PESEL</p>
+        </div>
+    </div>
+</body>
+
+</html>
