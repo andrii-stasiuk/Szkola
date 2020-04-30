@@ -1,0 +1,40 @@
+body {
+	font-family: Arial;
+	margin: 0px;
+}
+
+.lewy,
+.prawy {
+	background-color: rgb(255, 127, 80);
+	color: white;
+	width: 50%;
+	height: 410px;
+	float: left;
+}
+
+.baner,
+.glowny {
+	background-color: rgb(220, 220, 220);
+	padding: 20px;
+	text-align: center;
+}
+
+.stopka-lewy,
+.stopka-prawy {
+	background-color: rgb(255, 127, 80);
+	color: white;
+	width: 50%;
+	height: 100px;
+	float: left;
+}
+
+table,
+td {
+	border: 1px solid rgb(255, 127, 80);
+	padding: 10px;
+	text-align: center;
+}
+
+a {
+	color: white;
+}

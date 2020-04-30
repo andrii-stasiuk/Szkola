@@ -1,0 +1,4 @@
+SELECT `id`, `nazwa`, `wystepowanie` FROM `Ryby` WHERE `styl_zycia` = 2;
+SELECT `akwen`, `wojewodztwo` FROM `Lowisko` WHERE `rodzaj` = 2 OR `rodzaj` = 3;
+SELECT `ryby`.`nazwa` FROM `ryby` INNER JOIN `okres_ochronny` ON `ryby`.`id` = `okres_ochronny`.`Ryby_id` WHERE `okres_ochronny`.`od_miesiaca` = 0;
+CREATE TABLE `wedkarze` ( `id` INT UNSIGNED NOT NULL , `imie` TEXT , `nazwisko` TEXT , `punkty` INT ) ;
