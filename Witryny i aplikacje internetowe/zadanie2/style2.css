@@ -1,0 +1,43 @@
+body {
+	text-align: center;
+	background-color: GhostWhite;
+}
+
+h1 {
+	color: RoyalBlue;
+}
+
+caption {
+	color: orange;
+	text-align: left;
+	padding: 10px;
+}
+
+table {
+	border: 1px solid DimGray;
+	border-collapse: collapse;
+	height: 200px;
+	width: 80%;
+}
+
+th,
+td {
+	border: 1px solid black;
+}
+
+#table1 {
+	background-color: LightSkyBlue;
+	color: yellow;
+}
+
+#table1 th {
+	background-color: LightSteelBlue;
+	color: white;
+	border: 2px dotted yellow;
+}
+
+#table2 td {
+	background-color: OldLace;
+	color: MediumSlateBlue;
+	border: 2px dashed Sienna;
+}

@@ -1,0 +1,22 @@
+body {
+	background-image: url("gwiazda.png");
+	font-family: Times;
+	text-align: center;
+}
+
+h1 {
+	color: red;
+	font-style: italic;
+}
+
+#lewy {
+	width: 50%;
+	float: left;
+}
+
+#prawy {
+	padding-top: 20px;
+	width: 50%;
+	font-size: 18px;
+	float: right;
+}

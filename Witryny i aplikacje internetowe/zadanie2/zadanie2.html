@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+   <head>
+      <meta charset="UTF-8">
+      <title>Zadanie 2</title>
+      <link rel="stylesheet" href="style2.css" type="text/css">
+   </head>
+   <body>
+      <h1>Zadanie 2</h1>
+      <table id="table1">
+         <caption>Tabela 1</caption>
+         <tr>
+            <th colspan="4">Tekst</th>
+         </tr>
+         <tr>
+            <td colspan="2">Tekst</td>
+            <td colspan="2">Tekst</td>
+         </tr>
+         <tr>
+            <td>Tekst</td>
+            <td colspan="2">Tekst</td>
+            <td>Tekst</td>
+         </tr>
+      </table>
+      <br />
+      <!-- Jeśli w Tabeli 2 zrobić 6 linii, nie będzie ona spełniać wymagań W3C, ponieważ będzie miała puste tagi TR (bez TD) -->
+      <table id="table2">
+         <caption>Tabela 2</caption>
+         <tr>
+            <td rowspan="4">Tekst</td>
+            <td rowspan="2">Tekst</td>
+            <td>Tekst</td>
+         </tr>
+         <tr>
+            <td rowspan="2">Tekst</td>
+         </tr>
+         <tr>
+            <td rowspan="2">Tekst</td>
+         </tr>
+         <tr>
+            <td>Tekst</td>
+         </tr>
+      </table>
+   </body>
+</html>
