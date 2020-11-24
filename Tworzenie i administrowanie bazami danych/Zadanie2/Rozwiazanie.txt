@@ -1,0 +1,26 @@
+1.
+SELECT DISTINCT LokalizacjaTurnieju FROM turnieje;
+
+2.
+SELECT DataTurnieju, LokalizacjaTurnieju FROM turnieje ORDER BY DataTurnieju DESC, LokalizacjaTurnieju ASC;
+
+3.
+SELECT IDKreglarza AS Kreglarz, SUM(GraWygrana) AS Ilosc_wygranych_gier FROM wyniki_kreglarzy GROUP BY IDKreglarza;
+
+4.
+SELECT NazwiskoKreglarza, ImieKreglarza, AdresKreglarza, MiastoKreglarza, StanZamKreglarza, KodPocztowyKreglarza FROM kreglarze ORDER BY NazwiskoKreglarza, ImieKreglarza;
+
+5.
+SELECT CONCAT(ImieKreglarza, ' ', NazwiskoKreglarza) AS Imie, AdresKreglarza AS Adres_1, CONCAT(MiastoKreglarza, ' ', StanZamKreglarza, ' ', KodPocztowyKreglarza) AS Adres_2 FROM kreglarze ORDER BY KodPocztowyKreglarza;
+
+6.
+SELECT IDKreglarza, IDMeczu, NumerGry, WynikHandicap-WynikCzysty AS Punktowa FROM wyniki_kreglarzy ORDER BY IDKreglarza, IDMeczu, NumerGry;
+
+7.
+SELECT DataTurnieju, LokalizacjaTurnieju FROM turnieje WHERE DataTurnieju > '2012-12-31';
+
+8.
+SELECT k.NazwiskoKreglarza, k.ImieKreglarza, k.TelefonKreglarza FROM wyniki_kreglarzy w JOIN kreglarze k ON w.IDKreglarza=k.IDKreglarza GROUP BY w.IDKreglarza HAVING (AVG(w.WynikCzysty) >= 146) AND (AVG(w.WynikCzysty) <= 160) ORDER BY k.NazwiskoKreglarza, k.ImieKreglarza;
+
+9.
+SELECT d.NazwaDruzyny, k.NazwiskoKreglarza, k.ImieKreglarza FROM kreglarze k INNER JOIN druzyny d ON k.IDDruzyny=d.IDDruzyny ORDER BY d.NazwaDruzyny, k.NazwiskoKreglarza, k.ImieKreglarza;
