@@ -1,0 +1,8 @@
+31.
+SELECT stanowiska.nazwa AS "Nazwa stanowiska", COUNT(pracownicy.stanowisko) AS "Liczba pracowników" FROM pracownicy INNER JOIN stanowiska ON pracownicy.stanowisko=stanowiska.id_stanowiska GROUP BY pracownicy.stanowisko;
+
+32.
+SELECT stanowiska.nazwa AS "Nazwa stanowiska", AVG(stanowiska.pensja) AS "Średnia płaca" FROM pracownicy INNER JOIN stanowiska ON pracownicy.stanowisko=stanowiska.id_stanowiska GROUP BY pracownicy.stanowisko HAVING AVG(stanowiska.pensja) > 2500;
+
+33.
+SELECT imie, nazwisko, TIMESTAMPDIFF(YEAR,data_ur,CURDATE()) AS wiek FROM pracownicy;

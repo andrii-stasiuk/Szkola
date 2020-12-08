@@ -1,0 +1,44 @@
+1.
+INSERT INTO pracownicy VALUES (11, 'Andrii', 'Stasiuk', 33333.77, 'kierownik', NULL);
+
+17.
+SELECT * FROM pracownicy WHERE stanowisko='kierownik';
+
+18.
+SELECT * FROM pracownicy WHERE nazwisko LIKE 'A%';
+
+19.
+SELECT * FROM pracownicy WHERE nazwisko NOT LIKE '%i';
+
+20.
+SELECT * FROM pracownicy WHERE nazwisko LIKE '%c%';
+
+21.
+SELECT * FROM pracownicy WHERE stanowisko LIKE 's%';
+
+22.
+SELECT * FROM pracownicy WHERE nazwisko LIKE 'A%' OR nazwisko LIKE 'M%';
+
+23.
+SELECT nazwisko, placa FROM pracownicy WHERE placa > 1600;
+
+24.
+SELECT * FROM pracownicy WHERE id LIKE '%1' OR id LIKE '%3' OR id LIKE '%5' OR id LIKE '%7' OR id LIKE '%9';
+
+25.
+SELECT imie, nazwisko FROM pracownicy WHERE stanowisko='sprzedawca' ORDER BY nazwisko;
+
+26.
+SELECT * FROM pracownicy WHERE stanowisko<>'sprzedawca' AND pesel IS NOT NULL AND placa<2000;
+
+27.
+SELECT nazwisko, placa FROM pracownicy ORDER BY placa DESC;
+
+28.
+SELECT nazwisko, placa FROM pracownicy ORDER BY placa DESC LIMIT 3;
+
+29.
+SELECT nazwisko, placa FROM pracownicy ORDER BY placa ASC LIMIT 3;
+
+30.
+SELECT DISTINCT stanowisko FROM pracownicy;
