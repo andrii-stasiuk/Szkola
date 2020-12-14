@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+   <head>
+      <meta charset="UTF-8">
+      <title>Zadanie2</title>
+   </head>
+   <body>
+      <script>
+         var a = parseInt(prompt("Podaj 1 liczbę: "));
+         var b = parseInt(prompt("Podaj 2 liczbę: "));
+         var c = parseInt(prompt("Podaj 3 liczbę: "));
+         var buf = 0;
+         if (a > b) {
+             buf = a;
+             a = b;
+             b = buf;
+         }
+         if (b > c) {
+             buf = b;
+             b = c;
+             c = buf;
+         }
+         if (a > b) {
+             buf = a;
+             a = b;
+             b = buf;
+         }
+         document.write(a.toString() + " " + b.toString() + " " + c.toString());
+      </script>
+   </body>
+</html>

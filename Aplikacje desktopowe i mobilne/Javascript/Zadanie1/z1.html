@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+   <head>
+      <meta charset="UTF-8">
+      <title>Zadanie1</title>
+      <script type="text/javascript"> 
+         function checkNumber(){ 
+         var zmienna = document.getElementById('liczba').value;
+         if(zmienna > 100 && zmienna % 3 == 0) 
+         document.getElementById("wynik").innerHTML = "Liczba " +zmienna+ " jest wieksza od 100 i jest podzielna przez 3"; 
+         else document.getElementById("wynik").innerHTML = "Liczba " +zmienna+ " <b>nie</b> jest wieksza od 100 i/albo <b>nie</b> jest podzielna przez 3"; } 
+      </script>
+   </head>
+   <body>
+      <form> Liczba: <input type="number" id="liczba"> 
+         <button type="button" onclick="checkNumber()">Sprawd&#378;</button><br /> 
+      </form>
+      <p id="wynik"></p>
+   </body>
+</html>
