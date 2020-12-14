@@ -1,0 +1,55 @@
+body {
+	font-family: Garamond;
+	margin: 0px;
+}
+
+.baner {
+	background-color: #3CB371;
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
+
+.lewy {
+	background-color: #183D61;
+	color: white;
+	width: 70%;
+	float: left;
+}
+
+.lewy h1,
+p,
+iframe {
+	padding: 0px 10px 10px 10px;
+}
+
+.lewy img {
+	padding: 3px;
+	margin: 15px;
+	border: 2px dashed #3CB371;
+}
+
+.prawy {
+	width: 30%;
+	float: right;
+	text-align: center;
+	font-size: 110%;
+}
+
+.prawy li {
+	list-style-type: none;
+}
+
+.prawy ul {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.stopka {
+	background-color: #3CB371;
+	color: white;
+	padding: 10px;
+	font-size: 130%;
+	text-align: center;
+	clear: both;
+}

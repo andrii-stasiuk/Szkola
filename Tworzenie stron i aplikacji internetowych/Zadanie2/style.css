@@ -1,0 +1,59 @@
+body {
+	font-family: Garamond;
+	margin: 0px;
+	font-size: 200%;
+	text-align: center;
+	color: black;
+}
+
+.baner {
+	background-color: #3CB371;
+	padding-top: 0px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid;
+}
+
+.menu {
+	background-color: #CCCCCC;
+	padding-bottom: 20px;
+	border-bottom: 2px solid;
+}
+
+.lewy {
+	background-color: #083D61;
+	height: 210px;
+	width: 70%;
+	border-right: 2px solid;
+	margin-left: -2px;
+	float: left;
+}
+
+.prawy {
+	background-color: #FFFFFF;
+	height: 210px;
+	width: 30%;
+	float: right;
+}
+
+.stopka {
+	background-color: #3CB371;
+	padding-bottom: 20px;
+	border-top: 2px solid;
+	clear: both;
+}
+
+ul {
+	margin-left: 0;
+	padding-left: 0;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+li {
+	list-style-type: none;
+	line-height: 50px;
+}
+
+.cap {
+	text-transform: capitalize;
+}
