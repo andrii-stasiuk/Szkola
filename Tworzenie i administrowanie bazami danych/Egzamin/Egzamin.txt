@@ -1,0 +1,20 @@
+1.
+SELECT tytul FROM `filmy` WHERE rok_produkcji=1998 OR rok_produkcji=1999;
+2.
+SELECT imie, nazwisko FROM `klienci` WHERE LENGTH(imie)>LENGTH(nazwisko);
+3.
+SELECT DISTINCT id_filmu FROM `kopie` WHERE czy_dostepna='T' ORDER BY id_filmu;
+4.
+SELECT CONCAT(SUBSTRING(imie, 1, 1),'. ',nazwisko) AS Aktor FROM `aktorzy`;
+5.
+SELECT DISTINCT imie FROM `klienci` WHERE SUBSTRING(imie, 1, 1) = UPPER(SUBSTRING(imie,LENGTH(imie),1));
+6.
+SELECT CONCAT(LOWER(imie),'.',LOWER(nazwisko),'@cosinus.pl') AS email FROM `klienci`;
+7.
+SELECT wypozyczenia.data_wypozyczenia, wypozyczenia.data_zwrotu, klienci.nazwisko FROM `wypozyczenia` INNER JOIN `klienci` ON `wypozyczenia`.`id_klienta`=`klienci`.`id_klienta`;
+8.
+SELECT `filmy`.`tytul`, `filmy`.`rok_produkcji` FROM `klienci` INNER JOIN `wypozyczenia` ON `wypozyczenia`.`id_klienta`=`klienci`.`id_klienta` INNER JOIN `kopie` ON `wypozyczenia`.`id_kopii`=`kopie`.`id_kopii` INNER JOIN `filmy` ON `kopie`.`id_filmu`=`filmy`.`id_filmu` WHERE `klienci`.`nazwisko`='Kowalski';
+9.
+SELECT `aktorzy`.`nazwisko` FROM aktorzy INNER JOIN obsada ON `aktorzy`.`id_aktora`=`obsada`.`id_aktora` INNER JOIN filmy ON `obsada`.`id_filmu`=`filmy`.`id_filmu` WHERE `filmy`.`tytul`='Terminator';
+10.
+SELECT `klienci`.`imie`, `klienci`.`nazwisko`, `aktorzy`.`nazwisko` FROM `klienci` INNER JOIN `aktorzy` ON `klienci`.`imie`=`aktorzy`.`imie` WHERE `klienci`.`imie`=`aktorzy`.`imie`;
